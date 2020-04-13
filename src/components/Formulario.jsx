@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 
-const Formulario = () => {
+const Formulario = ({createAppointment}) => {
 
     //State citas
     const [ appointment, updateAppointment ] = useState({
@@ -48,8 +48,18 @@ const Formulario = () => {
    
     //Generando el id, a traves de la librera uuid
     appointment.id = uuidv4();
-    console.log(appointment);
 
+    //Crear cita
+    createAppointment(appointment);
+
+    //Limpiando Formulario
+    updateAppointment({
+        pet:'',
+        owner:'',
+        date:'',
+        hour:'',
+        symptom:''
+    })
     }
 
     return (
