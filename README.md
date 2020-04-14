@@ -6,5 +6,4 @@ Es una aplicacion web que permite a un usuario generar citas para sus mascotas y
 
 ### Layout 
 
-![interfaz de aplicacion web]
-(https://github.com/Crusiris/citas/blob/master/public/captureAplicacion.png)
+![interfaz de aplicacion web](https://github.com/Crusiris/citas/blob/master/public/captureAplicacion.png)
