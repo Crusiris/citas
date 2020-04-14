@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 const Cita = ({appointment, deleteAppointments}) => {
 
     const { pet, owner, date, hour, symptom , id} = appointment
@@ -20,4 +22,10 @@ const Cita = ({appointment, deleteAppointments}) => {
     );
 }
  
+//Documentacion del componente usando PropTypes
+Cita.propTypes = {
+    appointment:PropTypes.object.isRequired,
+    deleteAppointments: PropTypes.func.isRequired
+}
+
 export default Cita;

@@ -1,9 +1,6 @@
 import React, { Fragment, useState } from 'react'
-//import uuid from 'uuid/v4';
 import { v4 as uuidv4 } from 'uuid';
-
-
-
+import PropTypes from 'prop-types'
 
 
 const Formulario = ({createAppointment}) => {
@@ -130,5 +127,10 @@ const Formulario = ({createAppointment}) => {
         
       );
 }
+ 
+//Documentacion del componente usando PropTypes
+Formulario.propTypes={
+    createAppointment:PropTypes.func.isRequired
+  }
  
 export default Formulario;
